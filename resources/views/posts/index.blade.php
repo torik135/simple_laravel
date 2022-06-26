@@ -26,9 +26,14 @@
 			</div>
 		</form>
 
-		</div>
+	</div>
+
 </div>
-		<!-- this one -->
+		<div class="flex justify-center mb-4">
+			<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
+			{{ $posts->links() }}
+			</div>
+		</div>
 
 		@if($posts->count())
 			@foreach($posts as $post)
@@ -41,13 +46,18 @@
 			@endforeach
 
 			<div class="flex justify-center mb-4">
-			<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
-			{{ $posts->links() }}
-			</div>
+				<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
+				{{ $posts->links() }}
+				</div>
 			</div>
 			
 		@else
-		<p>There is no post!</p>
+		<div class="flex justify-center mb-4">
+			<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
+			<hr class="mb-6">
+				<p>There is no post!</p>
+			</div>
+			</div>
 		@endif
 
 	<!-- </div>

@@ -19,26 +19,34 @@ Route::get('/home', function() {
 	return view('home');
 })->name('home');
 
-
+// HOME
 Route::get('/dashboard', [DashboardController::class, 'index'])
 ->name('dashboard');
 
-Route::get('/users/{user:username}/posts', [UserPostController::class, 'index'])
+
+// PROFILE !!!!!!!!!!THIS IS ERR
+Route::get('/users/{user:name}/posts', [UserPostController::class, 'index'])
 ->name('users.posts');
 
+
+// REGIS
 Route::get('/register', [RegisterController::class, 'index'])
 ->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
 
+// LOGIN
 Route::get('/login', [LoginController::class, 'index'])
 ->name('login');
 Route::post('/login', [LoginController::class, 'store']);
 
 
+// LOGOUT
 Route::post('/logout', [LogoutController::class, 'store'])
 ->name('logout');
 
+
+// POSTS
 Route::get('/posts', [PostController::class, 'index'])
 ->name('posts');
 Route::get('/posts/{post}', [PostController::class, 'show'])
