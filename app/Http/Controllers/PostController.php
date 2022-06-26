@@ -13,7 +13,7 @@ class PostController extends Controller
 	public function index()
 	{
 		# code...
-		$posts = Post::latest()->with(['user', 'likes'])->paginate(15);
+		$posts = Post::latest()->with(['user', 'likes'])->paginate(15); 
 
 		return view('posts.index', [
 			'posts' => $posts

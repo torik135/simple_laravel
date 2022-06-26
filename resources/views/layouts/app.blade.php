@@ -27,7 +27,7 @@
 
 			@auth
 			<li>
-				<a href="" class="p-3">{{ auth()->user()->name }}</a>
+				<a href="/users/{{ auth()->user()->name}}/posts" class="p-3">{{ auth()->user()->name }}</a>
 			</li>
 
 			<li>

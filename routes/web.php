@@ -24,7 +24,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
 ->name('dashboard');
 
 
-// PROFILE !!!!!!!!!!THIS IS ERR
+// PROFILE
 Route::get('/users/{user:name}/posts', [UserPostController::class, 'index'])
 ->name('users.posts');
 

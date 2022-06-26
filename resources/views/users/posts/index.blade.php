@@ -21,22 +21,22 @@
 		@if($posts->count())
 			@foreach($posts as $post)
 			<div class="flex justify-center mb-4">
-			<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
-			<hr class="mb-6">
-				<x-post :post="$post"/>
-			</div>
+				<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
+					<hr class="mb-6">
+					<x-post :post="$post"/>
+				</div>
 			</div>
 			@endforeach
 			<div class="flex justify-center mb-4">
-			<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
-			{{ $posts->links() }}
-			</div>
+				<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
+					{{ $posts->links() }}
+				</div>
 			</div>
 		@else
 		<div class="flex justify-center mb-4">
-		<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
-			<p>{{ $user->name }} Tidak punya post!</p>
-		</div>
+			<div class="w-8/12 bg-white p-6 rounded-lg mb-4">
+				<p>{{ $user->name }} Tidak punya post!</p>
+			</div>
 		</div>
 		
 		@endif
