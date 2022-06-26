@@ -7,9 +7,9 @@
 
 ## How to use:
 
-1. ####clone / download this repo
-2. ####create .env file and copy anything inside .env.example
-3. ####create database and edit .env file until this lines fits your environment
+1. #### clone / download this repo
+2. #### create .env file and copy anything inside .env.example
+3. #### create database and edit .env file until this lines fits your environment
 
 ``` env
 DB_CONNECTION=mysql
@@ -20,13 +20,13 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
-5. ####on the terminal / cmd
+5. #### on the terminal / cmd
 ```bash
 php artisan migrate
 php artisan serve
 ```
-6. ####click register & create user
-7. ####on the terminal / cmd
+6. #### click register & create user
+7. #### on the terminal / cmd
 ```bash
 php artisan db:seeder PostSeeder
 ```
